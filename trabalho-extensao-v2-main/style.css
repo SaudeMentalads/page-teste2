@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  width: 100vw;
+  font-size: 1.6rem;
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header{
+  position: relative;
+
+  display: flex;
+  
+  margin-bottom: 2rem;
+
+   
+  height: 4.2rem;
+
+  background-image: linear-gradient(to right, #debaac, #da6272, #f82b6d);
+}
+
+header img{
+  position: absolute;
+  left: -11px;
+  top: -11px;
+
+  padding: 0;
+  width: 14rem;
+}
+
+/*Configurando o ASIDE */
+
+aside{
+
+  width: 20.0rem;
+  margin-left: 1.0rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+
+}
+
+.containerAside {
+ position: relative;
+ width: 13.0rem;
+ height: 13.0rem;
+ transition: all 200ms;
+}
+
+.containerAside:hover{
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+
+
+.containerAside img{
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.containerAside p{
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  color: rgb(250, 248, 248);
+  font-weight: bold;
+  font-size: 1.0rem;
+
+  background-color: rgba(29, 28, 28, 0.424);
+  
+
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.0rem;
+
+  position: absolute;
+  left: 2px;
+  bottom: 0;
+}
+
+.page{
+  position: relative;
+  display: flex;
+  gap: 4.3rem;
+  align-items: center;
+}
+
+main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+
+  width: 109.0rem;
+}
+
+main img{
+  border-radius: 0.8rem;
+  width: 39.0rem;
+}
+
+main h1{
+  font-family: 'Poppins', sans-serif;
+  color:#313233;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 4.0rem;
+
+}
+
+main p{
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  color:#313233a4;
+  font-size: 1.6rem;
+}
+
+footer{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 3rem;
+
+  color:white;
+  background:linear-gradient(to right, #debaac, #da6272, #f82b6d);
+
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #fff;
+  font-weight: 600;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+
+
+@media(max-width:700px){
+
+  .page{
+    padding-right: 50px;
+  }
+
+
+  main img{
+    width: 22.0rem;
+  }
+
+  main h1{
+    text-align: center;
+    font-size: 3.0rem;
+  }
+
+  aside{
+    display: none;
+  }
+}
+
+
+
+
+
+
